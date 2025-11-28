@@ -19,6 +19,18 @@ body {
     background-color: #f9f9f9;
 }
 
+#roll-again-alert {
+    width: 30%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f0b1b1;
+    color: #850000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
 
 #success-alert {
     width: 30%;

@@ -3,6 +3,7 @@ const diceContainer = document.querySelector('.dice-container');
 const btnRollDice = document.querySelector('.btn-roll-dice');
 const totalDisplay = document.querySelector('.dice-number');
 const successAlert = document.getElementById('success-alert');
+const rollAgainAlert = document.getElementById('roll-again-alert');
 
 
 function createDice(number) {
@@ -79,7 +80,9 @@ function countDiceNumber(rolls) {
     } 
     if (total >= 10) {
         successAlert.style.display = 'block';
+        rollAgainAlert.style.display = 'none';
     } else {
+        rollAgainAlert.style.display = 'block';
         successAlert.style.display = 'none';
     }
     totalDisplay.textContent = `${total}`;
