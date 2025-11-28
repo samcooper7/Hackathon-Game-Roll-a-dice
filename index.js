@@ -78,7 +78,7 @@ function countDiceNumber(rolls) {
     for (let i = 0; i < rolls.length; i++) {
         total += rolls[i];
     } 
-    if (total >= 10) {
+    if (total >= 12) {
         successAlert.style.display = 'block';
         rollAgainAlert.style.display = 'none';
     } else {
