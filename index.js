@@ -4,6 +4,7 @@ const btnRollDice = document.querySelector('.btn-roll-dice');
 const totalDisplay = document.querySelector('.dice-number');
 const successAlert = document.getElementById('success-alert');
 const rollAgainAlert = document.getElementById('roll-again-alert');
+let hasRolled = false;
 
 
 function createDice(number) {
@@ -78,7 +79,8 @@ function countDiceNumber(rolls) {
     for (let i = 0; i < rolls.length; i++) {
         total += rolls[i];
     } 
-    if (total >= 12) {
+    if (hasRolled) { 
+        if (total >= 12) {
         successAlert.style.display = 'block';
         rollAgainAlert.style.display = 'none';
     } else {
@@ -87,13 +89,17 @@ function countDiceNumber(rolls) {
     }
     totalDisplay.textContent = `${total}`;
 }
+}
 
-const initialRolls = randomiseDice(diceContainer, numberOfDice);
-countDiceNumber(initialRolls);
+//const initialRolls = randomiseDice(diceContainer, numberOfDice);
+//countDiceNumber(initialRolls);
 
 btnRollDice.addEventListener('click', () => {
 
+    hasRolled = true;
+
     successAlert.style.display = 'none';
+    rollAgainAlert.style.display = 'none';
     totalDisplay.textContent = '';
 
 
