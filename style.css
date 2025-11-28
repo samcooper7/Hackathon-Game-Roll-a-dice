@@ -4,6 +4,34 @@ body {
     margin: 0;
 }
 
+.dice-total {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    font-size: 24px;
+    width: 15%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+#success-alert {
+    width: 30%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #d4edda;
+    color: #155724;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
 
 .section-rules {
     width: 40%;
@@ -13,6 +41,7 @@ body {
     border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 .button-container {
@@ -39,7 +68,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
-.dice.dot {
+.dice-dot {
     --top: 0%;
     --left: 0%;
     
@@ -52,11 +81,11 @@ body {
 position: absolute;
 top: var(--top);
 left: var(--left);
-transform: translateX(calc(var(--left) *-1)) translateY (calc(var(--top) *-1));
+transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
 
 }
 
-
+    
 
 .btn-roll-dice {
     margin-top:10px;

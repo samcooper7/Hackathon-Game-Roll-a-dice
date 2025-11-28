@@ -16,16 +16,29 @@
     <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="assets/dice.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Roll a Dice Game
     </a>
   </div>
 </nav>
 
+<section class="dice-total">
+    <h2 class="section-title">Total: </h2>
+    <h3 class="dice-number">0</h3>
+
+</section>
+
+<div class="alert alert-success" role="alert" style="display:none;" id="success-alert">
+  You scored above 10! You win!
+</div>
+
     <div class="dice-container">
-        <div class="dice">
+        <!-- <div class="dice">
             <div class="dice-dot"></div>
-        </div>
+            <div class="dice-dot"></div>
+            <div class="dice-dot"></div>
+            <div class="dice-dot"></div>
+        </div> -->
     </div>
 
     <section class="section-rules">
@@ -33,7 +46,7 @@
         <ul>
             <li>Click the "Roll Dice" button to roll the dice.</li>
             <li>The dice will display a random number between 1 and 6.</li>
-            <li>Have fun!</li>
+            <li>If you score above 10 you win!</li>
         </ul>
         <div class="button-container">
         <button type="button" class="btn-roll-dice">Roll Dice</button>
